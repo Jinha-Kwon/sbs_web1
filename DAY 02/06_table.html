@@ -21,7 +21,7 @@
 		* tbody					: 테이블 몸체 영역을 지정
 		* tfoot					: 테이블 최하단 영역을 지정
 		
-		* colgroup				: 열 그룹을 지정하여 하나이상의 열에 동일한 형식을 지정하이 위해 사용
+		* colgroup				: 열 그룹을 지정하여 하나이상의 열에 동일한 형식(스타일)을 지정하이 위해 사용
 			- col				: 그룹화된 열을 나타내기 위해 사용
 								   (해당 태그에 형식을 지정하면 같은 열에 동일한 형식이 적용된다.)
 	 -->
@@ -56,9 +56,90 @@
 	 <hr>
 	 
 	 <!-- TODO 여기에 작성해보세요. -->
+	 <table border="1">
+		<caption>영화관 좌석표</caption>
+		<tr>
+			<th width="100">1열</th>
+			<th width="100">2열</th>
+			<th width="100">3열</th>
+		</tr>	
+		<tr>
+			<td rowspan="2" align="center">1+4</td>
+			<td align="center">2</td>
+			<td align="center">3</td>
+		</tr>
+		<tr>
+			<td align="center">5</td>
+			<td align="center">6</td>
+		</tr>
+		<tr>
+			<td colspan="3" align="center">7+8+9</td>
+		</tr>
+	 </table>
 	 
+	 <hr>
 	 
+	 <!-- thead, tbody, tfoot -->
+	 <table border="1">
+		<thead> <!-- 맨 앞 -->
+			<tr>
+				<th>월</th>
+				<th>매출액</th>
+			</tr>
+		</thead> 
+		<tbody> <!-- 2행부터 -->
+			<tr>
+				<td>1월</td>
+				<td>/1,000,000</td>
+			</tr>
+			<tr>
+				<td>2월</td>
+				<td>/2,000,000</td>
+			</tr>
+		</tbody>
+		<tfoot> <!-- 맨 마지막 -->
+			<tr>
+				<td>합계</td>
+				<td>/3,000,000</td>
+			</tr>
+		</tfoot>
+	 </table>
+
+
+	 <!-- colgroup -->
+	 <table border="1">
+		<caption>
+			COFFEE MENU LIST
+		</caption>
+		<colgroup>
+			<col style="background-color:aquamarine;">	<!-- 1열 -->
+			<col style="background-color:burlywood;">	<!-- 2열 -->
+			<col style="background-color:cornsilk;">	<!-- 3열 -->
+		</colgroup>
+		<tr>
+			<th>menu</th>
+			<th>price</th>
+			<th>option</th>
+		</tr>
+		<tr>
+			<td>아메리카노</td>
+			<td>2,500</td>
+			<td>hot/ice</td>
+		</tr>
+		<tr>
+			<td>카페라떼</td>
+			<td>3,500</td>
+			<td>hot/ice</td>
+		</tr>
+		<tr>
+			<td>카페모카</td>
+			<td>4,500</td>
+			<td>hot/ice</td>
+		</tr>
+	 </table>
 	 
+
+
 </body>
 </html>
 
