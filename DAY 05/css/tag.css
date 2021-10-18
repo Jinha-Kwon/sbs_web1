@@ -3,34 +3,65 @@
 
 header {
 	/* TODO 여기에 작성해보세요:) */
+	height: 85px;
+	background-color: #f0f0f0;
+	padding: 10px;
 }
 
 header h1 {
 	/* TODO 여기에 작성해보세요:) */
+	float: left;
+	font-size: 1.8rem;
 }
 
 header ul {
 	/* TODO 여기에 작성해보세요:) */
+	float: right;
+	font-size: 1.8rem;
 }
 
 header ul li {
 	/* TODO 여기에 작성해보세요:) */
+	list-style: none;
+	display: inline-block;
+}
+
+header ul li a {
+	text-decoration: underline;
+	color: black;
 }
 
 article {
 	/* TODO 여기에 작성해보세요:) */
+	min-height: 500px;
 }
 
 article section {
 	/* TODO 여기에 작성해보세요:) */
+	float: left;
 }
 
 article aside {
 	/* TODO 여기에 작성해보세요:) */
+	float: right;
+	width: 200px;
+	background-color: #c0dce7;
+	min-height: 500px;
+	padding: 10px 20px;
+	/* 내일 박스 모델에서 정확하게 설명할 것인데
+	그냥 한 값만 주면 상하좌우 균등하게 들어감
+	따로 주면 첫 번째 요소는 상하에, 두 번째 요소는 좌우에
+	세 개를 주면 첫 번째는 위, 두 번째는 좌우, 세 번째는 아래
+	네 개를 주면 시계방향으로 위, 오른쪽, 아래, 왼쪽 순으로  */
+	box-sizing: border-box;
 }
 
 footer {
 	/* TODO 여기에 작성해보세요:) */
+	height: 100px;
+	background-color: #fedd31;
+	padding: 20px;
+	text-align: center;
 }
 
 
