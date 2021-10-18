@@ -6,8 +6,33 @@
 	
 	<style>
 		/* TODO 여기에 작성해보세요:) */
-		
+		/* 하위 요소 */
+		article section ul {
+			color: tomato;
+		}
+
+		/* 자식 요소 */
+		article > section ul {
+			color: yellowgreen;
+		}
 	
+		/* 인접 선택자 */
+		h1 + h3 {
+			color:yellow;
+			font-size: 30px;
+		}
+
+		/* 형제 요소 */
+		article~article h2 {
+			color: brown;
+			background-color: darksalmon;
+			padding: 5px;
+		}
+
+		p~span {
+			color: darkseagreen;
+		}
+
 	</style>
 	
 </head>
