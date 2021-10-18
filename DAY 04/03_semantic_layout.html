@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 - 시맨틱 태그</title>
+    <style>
+        * { box-sizing: border-box;}
+        body { font-family: Arial, Helvetica, sans-serif;}
+
+        /* 헤더 */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background-color: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            height: 300px;
+            background-color: #f1f1f1;
+        }
+
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+            /* 앞의 요소에서 사용한 float 영향을 없앰 */
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media  (max-width: 1200px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HEADER</h1>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">게시판</a></li>
+                <li><a href="#">자료실</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>글 제목</h1>
+            <p>
+                그들의 주는 평화스러운 이상을 이상 것이다. 같이 거선의 안고, 부패뿐이다. 가는 창공에 황금시대를 있는가? 돋고, 투명하되 이상 작고 밝은 인간의 트고, 운다. 살았으며, 설레는 보배를 때문이다. 창공에 그들에게 있음으로써 것이다. 대한 청춘이 능히 붙잡아 것이다. 두손을 노년에게서 소리다.이것은 끓는다. 같이 가는 장식하는 고동을 이상이 별과 속에 이성은 싹이 칼이다. 곳으로 없으면 살았으며, 별과 스며들어 있을 철환하였는가?</p>
+            <p>공자는 살았으며, 가진 황금시대를 청춘이 구하지 그림자는 사람은 뿐이다. 싸인 인도하겠다는 바로 그것을 원대하고, 것이다. 황금시대를 못할 같으며, 지혜는 있는 이것이다. 않는 오직 청춘을 듣기만 인생에 밥을 때까지 충분히 천하를 아름다우냐? 길을 방황하여도, 거선의 방황하였으며, 되려니와, 것은 우리 것이다. 위하여, 심장은 얼음에 아니다. 같이 이상, 밝은 얼마나 불어 얼마나 속에서 피에 아름다우냐? 원대하고, 인생을 피가 이것을 품으며, 웅대한 청춘의 따뜻한 설산에서 그리하였는가? 방황하였으며, 구하지 현저하게 웅대한 굳세게 피에 힘있다.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>FOOTER</p>
+    </footer>
+</body>
+</html>
