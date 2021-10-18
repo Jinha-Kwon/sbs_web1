@@ -64,14 +64,14 @@
 	 		- name		:	입력 요소의 이름
 	 		- value		:	입력 요소의 초기값
 	 		
-	 		
-	 
-	  -->
+	 -->
+
+	 <!-- textarea: 장문 텍스트 입력-->
 	 
 	 <!-- TODO 여기에 작성해보세요. -->
 	 <form action="input.jsp" method="get">
 		<input type="text" name="input1">
-		<input type="text" name="input2">
+		<input type="password" name="input2"> <!-- 동그라미로 보임 -->
 		<input type="submit" value="전송">
 	 </form>
 	  	
@@ -87,7 +87,7 @@
 		Tel			:	<input type="tel"	name="id" /> <br>
 		Color		:	<input type="color"	name="id" /> <br>
 
-		radio		:
+		Sex			:
 						<input type="radio" name="gender" value="Female" id="Female">
 						<label for="Female">Female</label>
 
@@ -96,6 +96,38 @@
 
 						<input type="radio" name="gender" value="NB" id="NB">
 						<label for="NB">NB</label>
+
+						<br> <!-- break line -->
+		hobby		:
+						<label for="exercise">운동</label>
+						<input type="checkbox" name="hobby" value="exercise" id="exercise">
+
+						<label for="exercise">영화감상</label>
+						<input type="checkbox" name="hobby" value="movie" id="movie">
+
+						<label for="exercise">독서</label>
+						<input type="checkbox" name="hobby" value="book" id="book"> <br>
+
+		Date		:	<input type="date" name="date"> <br>				
+		Month		:	<input type="month" name="month"> <br>				
+		Time		:	<input type="time" name="time"> <br>				
+		Date-Time	:	<input type="datetime-local" name="datetime-local"> <br>				
+
+		Number		:	<input type="number" name="number" min="1" max="200" step="5"> <br>	
+		Range		:	<input type="range" name="range"> <br>	
+		File		:	<input type="file" name="file"> <br>	
+
+		<hr>
+		textarea	:
+		<textarea name="content" id="" cols="50" rows="10"></textarea>
+
+		<br>
+		<hr>
+		<input type="reset" value="다시 작성하기">
+		<input type="submit" value="제출하기">
+		<button type="button" onclick="alert('버튼 클릭')">목록</button>
+
+
 
 	</form>
 
