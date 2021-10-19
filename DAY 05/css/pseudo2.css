@@ -8,12 +8,15 @@ table.first {
 
 table.first th {
 	padding: 8px;
-	background-color: #bc1212;
+	background-color: turquoise;
 	color: #fff;
 	letter-spacing: 3px;
 }
 
 /* TODO 여기에 작성해보세요:) */
+table.first th:nth-child(2) {
+	letter-spacing: 45px;
+}
 
 table.first td {
 	padding: 10px;
@@ -21,19 +24,40 @@ table.first td {
 }
 
 /* TODO 여기에 작성해보세요:) */
+table.first td:first-child {
+	width: 15%;
+}
 
 /* TODO 여기에 작성해보세요:) */
+table.first td:nth-child(2) {
+	width: 60%;
+}
 
 /* TODO 여기에 작성해보세요:) */
-
+table.fisrt td:last-child {
+	width: 25%;
+}
 
 
 /* TODO 여기에 작성해보세요:) */
+table.first tr:nth-child(odd) {
+	background-color: paleturquoise;
+}
 
 /* TODO 여기에 작성해보세요:) */
+table.first tr:nth-child(even) {
+	background-color: whitesmoke;
+}
 
 /* TODO 여기에 작성해보세요:) */
+table.first tr:hover {
+	background-color: black;
+	color: blanchedalmond;
+}
 
+table.first td:hover {
+	font-weight: bold;
+}
 
 /* TODO 여기에 작성해보세요:) */
 
@@ -44,18 +68,18 @@ table.second {
 
 table.second th {
 	padding: 8px;
-	background-color: #ff8000;
-	color: #fff;
+	background-color: crimson;
 	letter-spacing: 3px;
 }
 
 /* TODO 여기에 작성해보세요:) */
-
+table.second th:nth-child(2) {
+	letter-spacing: 45px;
+}
 
 table.second td {
 	padding: 10px;
 	text-align: center;
-	color: #fff;
 }
 
 table.second td:first-of-type {
@@ -63,15 +87,36 @@ table.second td:first-of-type {
 }
 
 /* TODO 여기에 작성해보세요:) */
+table.second td:nth-of-type() {
+	width: 60%;
+	text-align: left;
+}
 
 /* TODO 여기에 작성해보세요:) */
+table.second td:last-of-type {
+	width: 25%;
+}
 
 
 /* TODO 여기에 작성해보세요:) */
+table.second tr:nth-of-type(odd) {
+	background-color: salmon;
+}
 
 /* TODO 여기에 작성해보세요:) */
+table.second tr:nth-of-type(even) {
+	background-color: whitesmoke;
+}
 
 /* TODO 여기에 작성해보세요:) */
+table.second tr:hover {
+	background-color: black;
+	color: blanchedalmond;
+}
+
+table.second td:hover {
+	font-weight: bold;
+}
 
 
 section.part1 div,
