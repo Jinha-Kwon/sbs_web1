@@ -128,11 +128,42 @@ section.part2 div {
 
 /* part1 : nth-of-type */
 /* TODO 여기에 작성해보세요:) */
+section.part1 div:first-of-type {
+	background-color: #FFADAD;
+}
+
+section.part1 div:last-of-type {
+	background-color: #FFFEB7;
+}
+
+section.part1 div:nth-last-of-type(2) {
+	background-color: #FFEFBC;
+}
+
+section.part1 div:nth-of-type(2) {
+	background-color: #FFDAC7;
+
+}
 
 
 /* part2 : nth-child */
 /* TODO 여기에 작성해보세요:) */
+section.part2 div:first-child {
+	background-color: #FFADAD;
+}
 
+section.part2 div:last-child {
+	background-color: #FFFEB7;
+}
+
+section.part2 div:nth-last-child(2) {
+	background-color: #FFEFBC;
+}
+
+section.part2 div:nth-child(2) {
+	background-color: #FFDAC7;
+
+}
 
 
 

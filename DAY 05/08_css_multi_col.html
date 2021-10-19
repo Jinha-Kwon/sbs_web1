@@ -4,10 +4,12 @@
     <style>
         .poet {
             columns: 200px 3;
+            /* ▲ columns 도 단축속성 - ▼ 따로 적용하고 싶으면 아래처럼 */
             /* column-count: 3; */
             /* column-width: 200px; */
             column-gap: 50px;
             column-rule: 1px solid lightblue;
+            /* ▲ column-rule 도 단축속성 - ▼ 따로 적용하고 싶으면 아래처럼 */
             /* column-rule-width: 1px; */
             /* column-rule-style: solid; */
             /* column-rule-color: lightblue; */
@@ -17,7 +19,7 @@
             border: 1px solid gray;
         }
         h2{
-            column-span: all;
+            column-span: all; /* 모든 다단을 다 차지하겠다 */
             text-align: center;
             margin: 40px auto;
         }
