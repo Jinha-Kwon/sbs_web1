@@ -1,0 +1,57 @@
+.container {
+    position: relative;
+    width: 1000px;
+    min-height: 300px;
+    border: 5px dashed orange;
+    margin: 0 auto;
+}
+
+h1 { text-align: center;}
+
+.inner:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+/* 
+    item1 가로가 460이 되어 있음
+    content-box : content 의 width 를 400 으로 하겠다는 것
+    content 400 + padding 20 * 2 + border 10 * 2 = 460
+*/
+
+.item1 {
+    padding: 20px;
+    height: 150px;
+    border: 10px solid #ccc;
+    box-sizing: content-box;
+}
+
+/* 
+    border-box 를 더 권장함
+*/
+
+.item2 {
+    padding: 20px;
+    height: 200px;
+    border: 10px solid #ccc;
+    box-sizing: border-box;
+}
+
+.left {
+    float: left;
+    background-color: pink;
+    width: 400px;
+}
+
+.right {
+    float: right;
+    background-color: lightblue;
+    width: 600px;
+}
+
+.next { background-color: violet;} /* 핑크 밑에 말려 들어감 */
+
+.clear-left { clear: left;}
+.clear-right { clear: right;}
+.clear-both { clear: both;}
