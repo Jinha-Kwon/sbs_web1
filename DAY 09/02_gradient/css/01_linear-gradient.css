@@ -1,0 +1,9 @@
+.box {
+    height: 500px;
+    margin: 50px;
+}
+
+.bottom {background-image: linear-gradient(to bottom, #FFADAD, #FFDAC7, #FFEFBC, #FFFEB7);}
+.top {background-image: linear-gradient(to top, #FFADAD, #FFDAC7, #FFEFBC, #FFFEB7);}
+.left {background-image: linear-gradient(to left, #FFADAD, #FFDAC7, #FFEFBC, #FFFEB7);}
+.right {background-image: linear-gradient(to right, #FFADAD, #FFDAC7, #FFEFBC, #FFFEB7);}

@@ -1,0 +1,9 @@
+.box {
+    height: 500px;
+    margin: 50px;
+}
+
+.bottom {background-image: radial-gradient( #FFADAD, #FFDAC7, #FFEFBC, #FFFEB7);}
+.top {background-image: radial-gradient( #FFADAD, #FFDAC7, #FFEFBC, #FFFEB7);}
+.left {background-image: radial-gradient( #FFADAD, #FFDAC7, #FFEFBC, #FFFEB7);}
+.right {background-image: radial-gradient( #FFADAD, #FFDAC7, #FFEFBC, #FFFEB7);}
