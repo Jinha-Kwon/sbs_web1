@@ -1,0 +1,51 @@
+.container{
+    text-align: center;
+}
+
+.inner{
+    width: 70vw;
+    min-height: 80vh;
+    margin: 0 auto;
+
+    /* 한 줄에 네 개씩 나오도록 25%로 지정
+       근데 알 수 없는 여백이 있음 그것 때문에 네 개가 아니라 세 개씩 나옴
+       inline-block으로 주면 하나의 글씨처럼 인식이 됨 자간이 잡혀서 여백 생김
+       ▲ 태그 사이의 공백(엔터) 버그
+       그걸 없애려면 HTML에서 엔터를 안 치고 한 줄로 나란히 배열 */
+
+    font-size: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+
+.inner .item{
+    display: inline-block;
+    margin: 0;
+    width: 25%;
+    height: 20vh;
+    border: 1px solid black;
+    box-sizing: border-box;
+
+
+}
+
+.color1 { background-color: #483434;}
+.color2 { background-color: #6B4F4F;}
+.color3 { background-color: #EED6C4;}
+.color4 { background-color: #FFF3E4;}
+
+.color5 { background-color: #021C1E;}
+.color6 { background-color: #004445;}
+.color7 { background-color: #2C7873;}
+.color8 { background-color: #6FB98F;}
+
+.color9 { background-color: #1E1F26;}
+.color10 { background-color: #283655;}
+.color11 { background-color: #4D648D;}
+.color12 { background-color: #D0E1F9;}
+
+.color13 { background-color: #1C0C5B;}
+.color14 { background-color: #3D2C8D;}
+.color15 { background-color: #916BBF;}
+.color16 { background-color: #C996CC;}
+
