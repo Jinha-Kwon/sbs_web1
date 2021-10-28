@@ -7,3 +7,8 @@
 .top {background-image: linear-gradient(to top, #FFADAD, #FFDAC7, #FFEFBC, #FFFEB7);}
 .left {background-image: linear-gradient(to left, #FFADAD, #FFDAC7, #FFEFBC, #FFFEB7);}
 .right {background-image: linear-gradient(to right, #FFADAD, #FFDAC7, #FFEFBC, #FFFEB7);}
+
+.bottom-left {background-image: linear-gradient(to bottom left, #FFADAD, #FFDAC7, #FFEFBC, #FFFEB7);}
+.bottom-right {background-image: linear-gradient(to bottom right, #FFADAD, #FFDAC7, #FFEFBC, #FFFEB7);}
+.top-left {background-image: linear-gradient(to top left, #FFADAD, #FFDAC7, #FFEFBC, #FFFEB7);}
+.top-right {background-image: linear-gradient(to top right, #FFADAD, #FFDAC7, #FFEFBC, #FFFEB7);}
