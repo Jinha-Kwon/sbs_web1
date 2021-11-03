@@ -1,0 +1,66 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+header {
+    overflow: hidden;
+    background-color: lightcoral;
+    padding: 40px 10px;
+}
+
+a {
+    color: black;    
+    text-decoration: none;
+}
+
+header a {
+    float: left;
+    text-align: center;
+    padding: 16px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+header a:hover {
+    color: #fff;
+}
+
+header a.active {
+    font-weight: bold;
+}
+
+header a.logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.header-right {
+    float: right;
+}
+
+header::after {
+    display: block;
+    clear: both;
+}
+
+section {
+    width: 1200px;
+    height: 300px;
+    padding: 50px;
+}
+
+/* width 760px 이하인 경우 반응형*/
+@media screen and (max-width: 780px) {
+
+    header a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    header a.logo {
+        margin-left: 0;
+    }
+
+    .header-right {float: none;}
+
+}
