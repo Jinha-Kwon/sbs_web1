@@ -1,0 +1,81 @@
+* {margin: 0; padding: 0;}
+
+ul {list-style: none;}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 여기까지 초기화 작업 */
+
+.container {
+    width: 1000px;
+    height: 900px;
+    margin: 0 auto;
+    border: 2px dashed orange;
+    position: relative; /* 이렇게 하면 컨테이너를 부모요소로 잡을 수 있음 */
+}
+
+header nav {
+    float: left;
+    height: 50px;
+    text-align: center;
+}
+
+header nav .mainmenu {
+    width: 600px;
+    line-height: 50px;
+
+}
+
+header nav .mainmenu > li {
+    /* float: left; */
+    width: 25%; /* 각각 가로 사이즈 150으로 나오는 것 */
+    height: 100%;
+    color: black;
+    transition: all 1s;
+    cursor: pointer;
+    /* 네모 전체가 버튼처럼 되게 */
+    position: relative;
+}
+
+header nav .mainmenu > li:hover {
+    background-color: lightcoral;
+}
+
+header nav .mainmenu > li:hover > a {
+    color: white;
+    
+}
+
+header nav .submenu {
+    position: absolute;
+    left: 150px;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+
+header nav .mainmenu > li:hover .submenu {
+    display: block;
+}
+
+header nav .submenu li {
+    background-color: lightgoldenrodyellow;
+    transition: 1x;
+}
+
+header nav .submenu li:hover a {
+    color: black;
+
+}
+
+header nav .submenu li:hover {
+    background-color: lightcoral;
+}
+
+header nav .submenu li:hover a {
+    color: white;
+}
+
