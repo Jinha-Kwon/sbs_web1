@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slide</title>
+    <!-- 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <!-- 폰트 어썸 - 햄버거 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="01_img-slide.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1 id=gnbLogo>
+                <a href="https://sbsart.com">SBS아카데미컴퓨터아트학원</a>
+            </h1>
+
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">아카데미 소개</a></li>
+                    <li><a href="#">교육 과정</a></li>
+                    <li><a href="#">포트폴리오</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </nav>
+
+            <div class="category">
+                <label for="category" class="btn">
+                    <i class="fa fa-bars"></i>
+                    카테고리
+                </label>
+            </div>
+        </header>
+
+        <!-- 사이드바 -->
+        <input type="checkbox" id="category" name="category">
+        <div class="sidebar">
+            <a href="#" class="active">WEB 1</a>
+            <a href="#">WEB 2</a>
+            <a href="#">WEB 3</a>
+            <a href="#">WEB Portfolio</a>
+        </div>
+
+        <!-- 이미지 슬라이드 -->
+        <section class="imgslide">
+            <ul>
+                <li><img src="img/slide01.jpg" alt="이미지 슬라이드"></li>
+                <li><img src="img/slide02.jpg" alt="이미지 슬라이드"></li>
+                <li><img src="img/slide03.jpg" alt="이미지 슬라이드"></li>
+            </ul>
+
+        </section>
+    </div>
+</body>
+</html>

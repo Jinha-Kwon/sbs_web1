@@ -1,0 +1,171 @@
+* { margin: 0; padding: 0;}
+
+body {
+    font-family: 'Jua', sans-serif;
+}
+
+.wrap {
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    background-color: white;
+
+}
+
+header #gnbLogo {
+    width: 240px;
+    height: 90px;
+    background: url(img/logo.png) no-repeat left center;
+    background-size: auto 90px;
+    text-indent: -9999px;
+}
+
+nav ul.gnb {
+    list-style: none; /* 글머리 기호 없앤 것 */
+    height: 90px;
+
+}
+
+nav ul.gnb li {
+    display: inline-block;
+    height: 90px;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul.gnb li a:hover {
+    color: cornflowerblue;
+    border-bottom: 2px solid cornflowerblue;
+    padding-bottom: 8px;
+}
+
+.category {
+    height: 90px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+
+
+
+
+.sidebar {
+    width: 200px;
+    background-color: #f1f1f1;
+    position: absolute;
+    right: -200px;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.7s ease-in-out;
+    z-index: 10;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: lightcoral;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: lightsalmon;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 10px 20px;
+    height: 1000px;
+}
+
+.content h2 {
+    padding-bottom: 10px;
+}
+
+
+
+input[name='category'] {
+    display: none;
+}
+
+/* category 체크했을 때 사이드바 */
+input#category:checked ~ .sidebar{
+    right: 0;
+}
+
+
+
+/* 이미지 슬라이드 */
+section.imgslide {
+    width: 3600px;
+        /*
+        wrap 가로가 1200px 이니까 이미지 가로도 1200px으로 줌
+        그리고 이미지가 세 개니까 이미지를 담는 박스를 3600px 으로 줌
+        아니면 300%라고 줘도 됨
+        */
+    height: 800px;
+}
+
+section.imgslide ul {
+    list-style: none;
+    position: relative;
+    animation-name: imgslide;
+    animation-duration: 20s;
+        /*
+        1번 이미지 5초
+        2번 이미지 5초
+        3번 이미지 5초
+        1번으로 돌아오는 데 5초
+        */
+    animation-iteration-count: infinite;
+    z-index: -10;
+
+}
+
+@keyframes imgslide {
+    /* left 속성 쓰려면 위 ul 에 position 줘야 함 */
+    0% { top: 0px; }
+    20% { top: 0px; }
+    40% { top: -800px;}
+    60% { top: -800px;}
+    80% { top: -1600px;}
+    90% { top: -1600px;}
+    100% { top: 0px;}
+} 
+
+section.imgslide ul li {
+    /* float: left; */
+    width: 1200px;
+    box-sizing: border-box;
+}
+
+section.imgslide ul li img {
+    width: 100%;
+    height: 100%;
+}
