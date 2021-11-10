@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이포그래피 - text</title>
+
+    <style>
+        div.a { text-align: center;}
+        div.b { text-align: left;}
+        div.c { text-align: right;}
+        div.d { text-align: justify;}
+        div.e { text-indent: 10%;}
+        div.f { text-decoration: underline;}
+        div.g p.a { text-transform: uppercase;}
+        div.g p.b { text-transform: lowercase;}
+        div.g p.c { text-transform: capitalize;}
+        div.h { line-height: 80px;}
+        div.h span { vertical-align: super;}
+        div.i { letter-spacing: 5px;}
+        div.j { word-spacing: 30px;}
+        div.k { white-space: pre;}
+        div.l { word-break: keep-all}
+        div.l p { width: 300px;}
+
+
+    </style>
+
+    <!-- break all 은 글자 잘라서 줄바꿈, keep-all 은 글자 안 자르고 줄바꿈 -->
+    <!-- letter-spacing 은 자간, word-spacing 은 어절 간격 -->
+</head>
+<body>
+    <h1>text-align</h1>
+
+    <div class="a">
+        <h2>text-align : center</h2>
+        <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        </p>
+    </div>
+
+    <div class="b">
+        <h2>text-align : left</h2>
+        <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        </p>
+    </div>
+
+    <div class="c">
+        <h2>text-align : right</h2>
+        <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        </p>
+    </div>
+
+    <div class="d">
+        <h2>text-align : justify</h2>
+        <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        </p>
+    </div>
+
+    <div class="e">
+        <h2>text-indent : 50px</h2>
+        <p>
+            It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+            <br>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+        </p>
+    </div>
+
+    <div class="f">
+        <h2>text-decoration : underline</h2>
+        <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        </p>
+    </div>
+    
+    <div class="g">
+        <h2>text-decoration : uppercase | lowecase | capitalized</h2>
+        <p class="a">
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        </p>
+        <p class="b">
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        </p>
+        <p class="c">
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        </p>
+    </div>
+
+    <div class="h">
+        <h2>vertical-align : supper</h2>
+        <p>
+            It is a long established fact <span>POINT</span> that a reader will be distracted by the readable content of a page when looking at its layout.
+        </p>
+    </div>
+
+    <div class="i">
+        <h2>letter-spacing : 5px</h2>
+        <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        </p>
+    </div>
+
+    <div class="k">
+        <h2>white-space : pre</h2>
+        <p>
+            It is     a long established fact
+            that a reader     will be distracted
+            by the readable content     of a page
+            when looking at its layout.
+        </p>
+    </div>
+
+    <div class="l">
+        <h2>word-break : keep-all</h2>
+        <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        </p>
+    </div>
+</body>
+</html>
