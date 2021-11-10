@@ -123,12 +123,7 @@ input#category:checked ~ .sidebar{
 
 /* 이미지 슬라이드 */
 section.imgslide {
-    width: 3600px;
-        /*
-        wrap 가로가 1200px 이니까 이미지 가로도 1200px으로 줌
-        그리고 이미지가 세 개니까 이미지를 담는 박스를 3600px 으로 줌
-        아니면 300%라고 줘도 됨
-        */
+    width: 1200px;
     height: 800px;
 }
 
@@ -149,13 +144,10 @@ section.imgslide ul {
 }
 
 @keyframes imgslide {
-    /* left 속성 쓰려면 위 ul 에 position 줘야 함 */
+    /* left 나 top 속성 쓰려면 위 ul 에 position 줘야 함 */
     0% { top: 0px; }
-    20% { top: 0px; }
     40% { top: -800px;}
-    60% { top: -800px;}
     80% { top: -1600px;}
-    90% { top: -1600px;}
     100% { top: 0px;}
 } 
 
