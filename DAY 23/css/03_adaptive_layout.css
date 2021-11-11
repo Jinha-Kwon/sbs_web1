@@ -1,0 +1,45 @@
+* { box-sizing: border-box ;}
+
+body {
+    text-align: center;
+}
+
+header, nav, section, footer {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+header, footer { padding: 20px 0;}
+nav, section { padding: 200px 0;}
+
+.wrap {
+    width: 400px;
+    margin: 0 auto;
+}
+
+nav, section {
+    width: 400px;
+}
+
+/* 태블릿 모드 - 800px */
+@media screen and (min-width: 800px) {
+    .wrap { width: 640px;}
+    header, footer { width: 640px;}
+    nav { width: 135px; margin-right: 10px;}
+    section { width: 495px;}
+
+    nav, section { float: left;}
+    footer { clear: both;}
+}
+
+/* PC 모드 - 1000px */
+@media screen and (min-width: 1000px) {
+    .wrap { width: 960px;}
+    header, footer { width: 960px;}
+    nav { width: 200px; margin-right: 10px;}
+    section { width: 750px;}
+
+    nav, section { float: left;}
+    footer { clear: both;}
+}

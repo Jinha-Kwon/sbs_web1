@@ -1,0 +1,45 @@
+* { box-sizing: border-box ;}
+
+body {
+    text-align: center;
+}
+
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+header, footer {
+    width: 960px;
+}
+
+nav, section {
+    float: left;
+}
+
+footer {
+    clear: both;
+}
+
+nav {
+    width: 200px;
+    margin-right: 10px;
+}
+
+section {
+    width: 750px;
+}
+
+header, nav, section, footer {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+header, footer {
+    padding: 20px 0;
+}
+
+nav, section {
+    padding: 200px 0;
+}
