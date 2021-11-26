@@ -13,7 +13,7 @@
 
 .item {
     width: 100px;
-    height: 100px;
+    height: auto;
     margin: 20px;
     padding: 20px;
     font-size: 30px;
@@ -40,3 +40,34 @@
 .column-reverse {
     flex-direction: column-reverse;
 }
+
+
+/* flex-wrap */
+.nowrap { flex-wrap: nowrap;}
+.wrap { flex-wrap: wrap;}
+.wrap-reverse { flex-wrap: wrap-reverse;}
+
+
+/* justify-content */
+.center { justify-content: center;}
+.start { justify-content: flex-start;}
+.end { justify-content: flex-end;}
+.between { justify-content: space-between;}
+.around { justify-content: space-around;}
+
+
+/* align-content */
+.content-stretch { align-content: stretch;}
+.content-start { align-content: flex-start;}
+.content-end { align-content: flex-end;}
+.content-center { align-content: center;}
+.content-between { align-content: space-between;}
+.content-around { align-content: space-around;}
+
+/* align-items */
+.cross-stretch { align-items: stretch;}
+.cross-start { align-items: flex-start;}
+.cross-end { align-items: flex-end;}
+.cross-center { align-items: center;}
+.cross-center .item { height: auto; line-height: 100px;}
+.cross-baseline { align-items: baseline;}
