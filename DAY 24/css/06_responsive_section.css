@@ -1,0 +1,18 @@
+* { margin: 0; padding: 0; border: 0;}
+
+
+/* 상품 목록 */
+.product_list {
+    display: flex;
+    flex-wrap: wrap; /* 줄바꿈 */
+}
+.product_list .card {
+    width: calc(98%/1);
+    margin: 1%;
+}
+.product_list .card img { width: 100px;}
+.product_list .card h2 { margin: 20px 0;}
+.product_list .card p { margin-bottom: 20px;}
+.product_list .card button {
+    
+}
