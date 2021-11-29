@@ -1,0 +1,85 @@
+
+* { margin: 0; padding: 0;}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+
+section.notice {
+    padding: 80px 0;
+}
+
+.title {
+    margin-bottom: 60px;
+}
+.title h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.search {
+    padding: 15px 0;
+    background-color:#e5e5e5;
+}
+.search .search-wrap {
+    margin: 0 auto;
+    width: 50%;
+}
+.search .search-wrap input {
+    width: 70%;
+    height: 40px;
+    font-size: 14px;
+    padding: 7px 14px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.search .search-wrap .button {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    color: white;
+    background-color: #555;
+    padding: 7px 14px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.list .table {
+    font-size: 13px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.list .table tr {
+    height: 40px;
+}
+
+.list .table th {
+    text-align: center;
+}
+
+.list .table tbody th {
+    padding-left: 30px;
+    padding-right: 14px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.list .table a {
+    text-decoration: none;
+    color: black;
+}
+
+.list .table tbody td {
+    padding-left: 30px;
+    padding-right: 14px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}

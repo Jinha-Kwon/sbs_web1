@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- 공지사항 -->
+        <section class="notice">
+
+            <!-- 타이틀 -->
+            <div class="title">
+                <h2>공지사항</h2>
+            </div>
+
+            <!-- 검색창 -->
+            <div class="search">
+                <div class="search-wrap">
+                    <form action="/board/writer" method="post"> <!-- 개발자 영역 -->
+                        <input type="text" name="keyword" id="search" placeholder="검색어를 입력하세요.">
+                        <button type="submit" class="button">검색</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- 목록 -->
+            <div class="list">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>등록일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3</td>
+                            <th><a href="#">[공지사항] 어찌고 저찌고</a></th>
+                            <td>2021. 11. 26.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <th><a href="#">웹3 과정도 기대해주세요!</a></th>
+                            <td>2021. 11. 20.</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <th><a href="#">웹 포트폴리오 수업도 열심히 준비하고 있습니다!</a></th>
+                            <td>2021. 11. 11.</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
