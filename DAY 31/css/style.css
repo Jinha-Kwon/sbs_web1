@@ -3,7 +3,7 @@
 /* 공통 */
 html { font-size: 100%; }
 
-body { font-family: "나눔고딕", NanumGothic, "맑은고딕", MalgunGothic, "Apple SD Gothic Neo", sans-serif; }
+body { font-family: 'Noto Sans KR', sans-serif; }
 
 /* a태그 밑줄제거 */
 a { text-decoration: none; }
@@ -31,6 +31,7 @@ p { line-height: 1.5rem;}
 /* 제목 */
 .page-title {
     font-size: 5rem;
+    margin: 40px;
 }
 /* 소제목 */
 .sub-title {
@@ -147,24 +148,18 @@ footer p {
     /* HEADER */
     .main-nav {
         font-size: 1rem;
-        margin-top: 10px;
+        margin-top: 30px;
     }
     .main-nav li {
         margin: 0 20px;
     }
-
-    /* HOME */
-    .home-content {
-        margin-top: 20%;
-    }
-
 
     /* blog */
     .blog-contents {
         flex-direction: column;
     }
     #blog .page-title {
-        margin-top: 30px;
+        margin-top: 60px;
     }
     article,
     aside {
@@ -197,13 +192,6 @@ footer p {
     .post-cate {
         margin-left: 80px;
     }
-
-   /*
-   PC 에서는 수평으로 해도 됨
-   모바일에서는 가로 사이즈가 작으니까 수직으로 해야 됨
-   */
-   
-   
     
 }
 
